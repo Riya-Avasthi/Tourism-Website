@@ -1,95 +1,173 @@
 *{
-    padding: 0;
     margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: black;
-}
-
-header{
-    background-image: url(Back_Water_Of_kerala-Soul_of_kerala.webp);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background-image: url(Feature-image-Rajasthan-fort.jpg);
     background-position: center center;
     background-size: max(1200px,100vw);
     background-repeat: no-repeat;
-    height: 80vh;
-}
-
-.main .backg{
-    /* height: 80vh;
-    width: 100%; */
-    /* opacity: 0.6; */
+    height: 70vh;
     background-color: black;
-    
 }
 
-.nav{
+div{
     display: block;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
-    max-width: 80vw;
-    height: 50px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-.right ul {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-}
-
-.logo img{
-    width: 40px;
-    padding: 14px;
-}
-
-.right ul li {
-    list-style: none;
-    display: flex;
-    flex-direction: flex-end;
-    align-items: center;
-    cursor: pointer;
-}
-
-li span {
-    padding: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    color: beige;
-    
-}
-
-li img {
-    height: 14px;
-}
-
-.text span{
-    font-family: 'Archivo Black' , 'san-serif';
-    height: calc(100% - 100px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(253, 253, 253);
-    font-weight: 900;
-    font-size: 100px;
+.navbar-custom{
     position: relative;
-    gap: 24px;
-    /* padding:100px 20px; */
-    /* t r b l */
-    padding: 300px 800px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
 }
 
-.but{
-    background-color: black;
-    border: 2px solid grey;
-    border-radius: 114px;
-    height: 113px;
-    width: 114px;
-    
+header{
+    background-color: rgba(255, 255, 255, 0.667);
 }
 
-/* header :nth-child(3){
-    padding: 0 0 0 200px;
-} */
+.Header .logo{
+    display: inline-block;
+    padding-bottom: 0.3125rem;
+    font-size: 1.25rem;
+}
+
+.Header .logo img{
+    width: 90px;
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-logo{
+    max-width: 100%;
+    height: auto;
+}
+
+.Header .tagline{
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+    gap: 4px;
+    /* visibility: visible; */
+}
+
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.2;
+    display: block;
+}
+
+.navbarMenu{
+    align-items: center;
+}
+
+.Header .navbarMenu .menuitems{
+    display: flex;
+    flex-direction: column;
+    padding-left:0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    margin: 10px;
+}
+
+li span{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+ul{
+    text-decoration: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.Header .menuitems .li1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    gap: 4px;
+}
+
+@media (min-width: 1900px){
+    .Header .navbarMenu{
+        margin-left: 8%;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .Header{
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 90px;
+    }
+
+    .Header .tagline{
+        color:black;
+        /* visibility: hidden; */
+        width: 16%;
+    }
+
+    .Header .navbarMenu .menuitems{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .Header .navbarMenu .menuitems .litem{
+        height: 90px;
+        display: flex;
+        align-items: center;
+        position: static;
+    }
+
+    .Header .navbarMenu{
+        flex-basis: 50%;
+        flex-grow: 0;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1280px){
+    .Header .navbar-custom{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        height: 90px;
+        align-items: center;
+    }
+
+    .Header .navbar-custom .navbarMenu{
+        display: flex !important;
+        box-shadow: none;
+        justify-content: center;
+    }
+}
