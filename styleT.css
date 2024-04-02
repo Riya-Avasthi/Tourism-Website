@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -6,23 +6,23 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
     background-image: url(Feature-image-Rajasthan-fort.jpg);
     background-position: center center;
-    background-size: max(1200px,100vw);
+    background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
     height: 70vh;
-    background-color: black;
+    background-color: rgb(255, 231, 209);
 }
 
-div{
+div {
     display: block;
 }
 
-.navbar-custom{
+.navbar-custom {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -31,31 +31,35 @@ div{
     padding: 0.5rem 1rem;
 }
 
-header{
+header {
     background-color: rgba(255, 255, 255, 0.667);
 }
 
-.Header .logo{
+.Header .logo {
     display: inline-block;
     padding-bottom: 0.3125rem;
     font-size: 1.25rem;
 }
 
-.Header .logo img{
+.Header .btn {
+    color: black;
+}
+
+.Header .logo img {
     width: 90px;
 }
 
-img{
+img {
     vertical-align: middle;
     border-style: none;
 }
 
-.img-logo{
+.img-logo {
     max-width: 100%;
     height: auto;
 }
 
-.Header .tagline{
+.Header .tagline {
     font-size: 20px;
     font-weight: 400px;
     text-align: center;
@@ -63,43 +67,43 @@ img{
     /* visibility: visible; */
 }
 
-h1{
+h1 {
     margin-bottom: 0;
     margin-top: 0;
     line-height: 1.2;
     display: block;
 }
 
-.navbarMenu{
+.navbarMenu {
     align-items: center;
 }
 
-.Header .navbarMenu .menuitems{
+.Header .navbarMenu .menuitems {
     display: flex;
     flex-direction: column;
-    padding-left:0;
+    padding-left: 0;
     margin-bottom: 0;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     margin: 10px;
 }
 
-li span{
+li span {
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
 
-ul{
+ul {
     text-decoration: none;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
 
@@ -114,50 +118,328 @@ ul{
     gap: 4px;
 }
 
-@media (min-width: 1900px){
-    .Header .navbarMenu{
+.Header .search input {
+    border: 2px solid rgba(73, 73, 73, 0.811);
+    border-radius: 4px;
+    background: none;
+    height: 30px;
+}
+
+.Header .search input[placeholder=Search] {
+    padding: 5px;
+}
+
+.Header .search .btn img {
+    background-color: rgba(255, 229, 198, 0.292);
+
+}
+
+.Header .search button {
+    background: none;
+    border: none;
+    height: 60px;
+    color: black;
+    cursor: pointer;
+}
+
+/* main, section{
+    display: block;
+}
+
+.first{
+    position: relative;
+    display: none;
+}
+
+.first .bg1{
+    height: 90vh;
+    background-size: cover;
+} */
+
+.main {
+    display: flex;
+    gap: 50px;
+    color: white;
+}
+
+.left {
+    color: white;
+    padding-top: 300px;
+    padding-left: 280px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+}
+
+.right {
+    margin: 5px;
+}
+
+.rightbox {
+    /* border: 2px solid black; */
+    height: 450px;
+    width: 670px;
+    padding-top: 30px;
+    margin-top: 110px;
+    display: flex;
+    gap: 2px;
+}
+
+.b1 {
+
+    margin: 5px;
+    width: 223px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.slidebtn {
+    color: white;
+    display: flex;
+    float: right;
+    padding: 23px;
+    margin-right: 292px;
+    gap: 15px;
+}
+
+.slidebtn button {
+    width: 65px;
+    background: none;
+    border: none;
+    background-color: rgba(251, 209, 167, 0.507);
+    border-radius: 53px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: invert();
+    background-color: rgba(110, 110, 110, 0.416);
+}
+
+.b1img {
+    width: 223px;
+    height: 390px;
+    padding: 6px;
+}
+
+.section2 {
+    background-color: rgb(255, 231, 209);
+    height: 500px;
+}
+
+hr {
+
+    border: 2px solid rgb(199, 120, 16);
+
+}
+
+.section3 {
+    background-color: rgb(255, 231, 209);
+    height: 950px;
+}
+
+.section4, .section5, .section6 {
+    background-color: rgb(255, 231, 209);
+    height: 500px;
+}
+
+.destinations{
+    border: 2px solid black;
+    height: 450px;
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.destinations .slidedestination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    margin: 20px;
+    padding: 30px;
+    height: 70%;
+    
+}
+
+.blogs{
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.blog1{
+    border: 2px solid grey;
+    padding: 30px;
+    margin: 30px;
+    height: 250px;
+}
+
+.BookGuide{
+    border: 2px solid black;
+    height: 450px;
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.bookg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    height: 70%;
+    margin: 20px;
+    gap: 20px;
+}
+.guidepic{
+    border: 2px solid gray;
+    height: 70%;
+    width: 20%;
+}
+.bookinfo{
+    border: 2px solid gray;
+    height: 70%;
+    width: 60%;
+}
+
+.Agencies, .subcription{
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.Agencies .agen, .subscribe{
+    border: 2px solid grey;
+    padding: 30px;
+    margin: 30px;
+    height: 350px;
+}
+
+.imagblured img{
+    width: 1580px;
+    height: 70vh;
+    filter:drop-shadow(20px 20px 30px rgb(163, 116, 53));
+    opacity: 0.7;
+}
+
+footer{
+    background-color: burlywood;
+    width: 1520px;
+}
+
+.foot{
+    height: 40vh;
+    width: 1580px;
+    background-color:burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.foot img{
+    width: 300px;
+    height:300px;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.foot .l1,.l2{
+    width: 300px;
+    border: 2px solid rgb(199, 120, 16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.lastfoot{
+    border: 2px solid black;
+    padding: 30px;
+    margin: 30px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+.lastfoot .leftfoot .log img{
+    width: 90px;
+}
+.lastfoot .rightfoot{
+    border: 2px solid black;
+    height: 275px;
+    padding: 5px;
+    width: 60%;
+    margin-right: 7px;
+}
+
+@media (min-width: 1900px) {
+    .Header .navbarMenu {
         margin-left: 8%;
     }
 }
 
 
+
 @media (min-width: 1280px) {
-    .Header{
+    .Header {
         position: absolute;
         left: 0;
         right: 0;
         height: 90px;
     }
 
-    .Header .tagline{
-        color:black;
+    .Header .tagline {
+        color: black;
         /* visibility: hidden; */
         width: 16%;
     }
 
-    .Header .navbarMenu .menuitems{
+    .Header .navbarMenu .menuitems {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
     }
 
-    .Header .navbarMenu .menuitems .litem{
+    .Header .navbarMenu .menuitems .litem {
         height: 90px;
         display: flex;
         align-items: center;
         position: static;
     }
 
-    .Header .navbarMenu{
+    .Header .navbarMenu {
         flex-basis: 50%;
         flex-grow: 0;
         justify-content: center;
     }
 
+
+
+
+    /* eader .btn{
+      .H  min-width: 25px;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+
+    .Header .btn .searchIcon{
+        padding: 0;
+        height: 13px;
+        display: inline-block;
+        line-height: .6;
+    } */
+
 }
 
-@media (min-width: 1280px){
-    .Header .navbar-custom{
+@media (min-width: 1280px) {
+    .Header .navbar-custom {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
@@ -165,7 +447,7 @@ ul{
         align-items: center;
     }
 
-    .Header .navbar-custom .navbarMenu{
+    .Header .navbar-custom .navbarMenu {
         display: flex !important;
         box-shadow: none;
         justify-content: center;
